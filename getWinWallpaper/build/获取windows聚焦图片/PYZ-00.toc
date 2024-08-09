@@ -1,4 +1,4 @@
-('D:\\小软件\\getWinWallpaper\\build\\获取windows聚焦图片\\PYZ-00.pyz',
+('D:\\LittleTools\\getWinWallpaper\\build\\获取windows聚焦图片\\PYZ-00.pyz',
  [('_compat_pickle',
    'C:\\Users\\28325\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\_compat_pickle.py',
    'PYMODULE'),
