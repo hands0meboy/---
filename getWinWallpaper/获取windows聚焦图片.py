@@ -65,10 +65,15 @@ else:
     # 遍历文件名列表，将每个文件拷贝到目标文件夹
     for file_name in file_names:
         src_path = os.path.join(src_folder, file_name)
-        dest_path = os.path.join(new_dest_folder, file_name + '.png')
+        
+        # 判断文件是否已有后缀
+        if not any(file_name.lower().endswith(ext) for ext in ['.jpg', '.png', '.jpeg', '.bmp']):
+            dest_path = os.path.join(new_dest_folder, file_name + '.png')
+        else:
+            dest_path = os.path.join(new_dest_folder, file_name)
 
         if os.path.exists(yesterday_folder):
-            if not file_name + '.png' in yesterday_file_names:
+            if not file_name in yesterday_file_names:
                 shutil.copy(src_path, dest_path)
             else:
                 continue
